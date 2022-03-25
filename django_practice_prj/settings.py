@@ -79,11 +79,13 @@ WSGI_APPLICATION = 'django_practice_prj.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    'default': { 'ENGINE': 'django.db.backends.postgresql', 
+                'NAME': 'DjangoTest', 
+                'USER': 'postgres', 
+                'PASSWORD' : '1234', 
+                'HOST' : 'localhost', 
+                'PORT' :'5435', }
 
-    }
 }
 
 
