@@ -10,6 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
+import os
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,7 +27,7 @@ SECRET_KEY = 'django-insecure-*&9zzu#vd%=vm2rq!)*qof%c&uh2l#yu8v0(x4at78vf&rse2_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -39,7 +41,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog',
     'single_pages',
+<<<<<<< HEAD
     'user',
+=======
+    'User'
+>>>>>>> 3bade4392908a7a957fec8e48d681fc611637e93
 ]
 
 MIDDLEWARE = [
@@ -77,6 +83,7 @@ WSGI_APPLICATION = 'django_practice_prj.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
+<<<<<<< HEAD
     'default': { 'ENGINE': 'django.db.backends.postgresql', 
                 'NAME': 'Django-test', 
                 'USER': 'postgres', 
@@ -84,6 +91,13 @@ DATABASES = {
                 'HOST' : 'localhost', 
                 'PORT' :'5432', }
 
+=======
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
+    }
+>>>>>>> 3bade4392908a7a957fec8e48d681fc611637e93
 }
 
 
