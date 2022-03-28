@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog',
     'single_pages',
-    'User'
+    'User',
+    'wallet',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -80,11 +82,11 @@ WSGI_APPLICATION = 'django_practice_prj.wsgi.application'
 
 DATABASES = {
     'default': { 'ENGINE': 'django.db.backends.postgresql', 
-                'NAME': 'DjangoTest', 
+                'NAME': 'haeun', 
                 'USER': 'postgres', 
-                'PASSWORD' : '1234', 
+                'PASSWORD' : '0809', 
                 'HOST' : 'localhost', 
-                'PORT' :'5435', }
+                'PORT' :'5433', }
 
 }
 
