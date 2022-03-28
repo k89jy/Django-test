@@ -41,8 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog',
     'single_pages',
-    'User'
+    'wallet',
+    'User',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -80,7 +82,7 @@ WSGI_APPLICATION = 'django_practice_prj.wsgi.application'
 
 DATABASES = {
     'default': { 'ENGINE': 'django.db.backends.postgresql', 
-                'NAME': 'DjangoTest', 
+                'NAME': 'DjangoStudy', 
                 'USER': 'postgres', 
                 'PASSWORD' : '1234', 
                 'HOST' : 'localhost', 
