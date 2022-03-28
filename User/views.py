@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 from django.http import HttpResponse
 
 
@@ -10,3 +11,19 @@ def results(request, question_id):
 
 def vote(request, question_id):
     return HttpResponse("You're voting on question %s." % question_id)
+=======
+from django.shortcuts import render
+# Create your views here.
+
+def login(request):
+
+    return render(
+        request,
+        'User/login.html')
+def logout(request):
+
+    return render(
+        request,
+        'User/logout.html')
+        
+>>>>>>> Stashed changes

@@ -42,11 +42,17 @@ INSTALLED_APPS = [
     'blog',
     'single_pages',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'user',
 =======
     'User'
 >>>>>>> 3bade4392908a7a957fec8e48d681fc611637e93
+=======
+    'wallet',
+    'User',
+>>>>>>> origin/changrae
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -84,6 +90,7 @@ WSGI_APPLICATION = 'django_practice_prj.wsgi.application'
 
 DATABASES = {
 <<<<<<< HEAD
+<<<<<<< HEAD
     'default': { 'ENGINE': 'django.db.backends.postgresql', 
                 'NAME': 'Django-test', 
                 'USER': 'postgres', 
@@ -98,6 +105,15 @@ DATABASES = {
 
     }
 >>>>>>> 3bade4392908a7a957fec8e48d681fc611637e93
+=======
+    'default': { 'ENGINE': 'django.db.backends.postgresql', 
+                'NAME': 'DjangoStudy', 
+                'USER': 'postgres', 
+                'PASSWORD' : '1234', 
+                'HOST' : 'localhost', 
+                'PORT' :'5435', }
+
+>>>>>>> origin/changrae
 }
 
 

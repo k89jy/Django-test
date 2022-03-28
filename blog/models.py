@@ -6,8 +6,14 @@ class Post(models.Model):
     title = models.CharField(max_length=30)
     content = models.TextField()
 
+<<<<<<< HEAD
     created_at = models.DateTimeField(auto_now_add=True)
     upated_at = models.DateTimeField(auto_now=True)
+=======
+    created_at = models.DateTimeField(auto_now_add = True)
+    updated_at = models.DateTimeField(auto_now =True)
+
+>>>>>>> origin/changrae
 
 
     def __str__(self):
