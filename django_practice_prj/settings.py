@@ -41,16 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog',
     'single_pages',
-<<<<<<< HEAD
-<<<<<<< HEAD
-    'user',
-=======
-    'User'
->>>>>>> 3bade4392908a7a957fec8e48d681fc611637e93
-=======
     'wallet',
     'User',
->>>>>>> origin/changrae
 ]
 
 
@@ -89,31 +81,13 @@ WSGI_APPLICATION = 'django_practice_prj.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    'default': { 'ENGINE': 'django.db.backends.postgresql', 
-                'NAME': 'Django-test', 
+    'default': { 
+                'ENGINE': 'django.db.backends.postgresql', 
+                'NAME': 'DjangoStudy', 
                 'USER': 'postgres', 
                 'PASSWORD' : 'qwer1234', 
                 'HOST' : 'localhost', 
                 'PORT' :'5432', }
-
-=======
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-
-    }
->>>>>>> 3bade4392908a7a957fec8e48d681fc611637e93
-=======
-    'default': { 'ENGINE': 'django.db.backends.postgresql', 
-                'NAME': 'DjangoStudy', 
-                'USER': 'postgres', 
-                'PASSWORD' : '1234', 
-                'HOST' : 'localhost', 
-                'PORT' :'5435', }
-
->>>>>>> origin/changrae
 }
 
 
